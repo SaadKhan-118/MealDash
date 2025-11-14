@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealDash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.svg" alt="MealDash Logo" class="logo">
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <h2>Fresh Food Delivered Fast</h2>
+            <p>Your favourite meals delivered to your doorstep in minutes.</p>
+            <a href="#order-form" class="btn-primary">Order Now</a>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features">
+            <div class="features-grid">
+                <article>
+                    <h3>Fast Delivery</h3>
+                    <p>We deliver your meals in under 30 minutes.</p>
+                </article>
+
+                <article>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Meals cooked with the highest quality ingredients.</p>
+                </article>
+
+                <article>
+                    <h3>Live Tracking</h3>
+                    <p>Track your order in real-time.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu">
+            <h2>Popular Dishes</h2>
+            <div class="menu-grid">
+                <article>
+                    <img src="assets/pizza.jpeg" alt="Pizza">
+                    <h3>Cheese Pizza</h3>
+                    <p>Rs. 1200</p>
+                </article>
+
+                <article>
+                    <img src="assets/burger.jpeg" alt="Burger">
+                    <h3>Classic Burger</h3>
+                    <p>Rs. 750</p>
+                </article>
+
+                <article>
+                    <img src="assets/pasta.jpeg" alt="Pasta">
+                    <h3>Italian Pasta</h3>
+                    <p>Rs. 999</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ORDER FORM -->
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form class="order-form">
+                <!-- Text Inputs -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <!-- Checkboxes -->
+                <p>Select Your Meal:</p>
+                <label><input type="checkbox" name="meal" value="pizza"> Pizza</label>
+                <label><input type="checkbox" name="meal" value="burger"> Burgers</label>
+                <label><input type="checkbox" name="meal" value="pasta"> Pasta</label>
+                <label><input type="checkbox" name="meal" value="dessert"> Desserts</label>
+
+                <!-- Radio Buttons -->
+                <p>Choose Delivery Speed:</p>
+                <label><input type="radio" name="speed" value="normal"> Normal (Free)</label>
+                <label><input type="radio" name="speed" value="express"> Express (Extra charges)</label>
+
+                <!-- Select -->
+                <label for="city">Select Area</label>
+                <select id="city">
+                    <option>Model Town</option>
+                    <option>Johar Town</option>
+                    <option>Faisal Town</option>
+                    <option>Other</option>
+                </select>
+
+                <!-- Textarea -->
+                <label for="instructions">Special Instructions</label>
+                <textarea id="instructions" rows="4"></textarea>
+
+                <!-- Submit -->
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
